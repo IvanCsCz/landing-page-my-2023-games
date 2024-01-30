@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -22,7 +22,10 @@ body {
 }
 
 .header .logo img {
-  height: 70px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+
   width: auto;
 }
 
@@ -58,4 +61,53 @@ body {
   width: 80%;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 0px 20px 20px -15px rgba(13, 48, 189, 0.15);
+}
+
+.my-games-section h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #76c2af;
+  border-radius: 10px 10px 0 0;
+}
+
+.games-grid {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  list-style-type: none;
+}
+
+.game {
+  display: grid;
+  place-items: center;
+}
+
+.card-game {
+  border-radius: 8px;
+  border: 1px solid #000;
+  box-shadow: 0px 20px 20px -15px rgba(13, 48, 189, 0.15);
+}
+
+.game-poster {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.game-name {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
